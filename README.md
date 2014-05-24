@@ -1,13 +1,10 @@
-GuperApp
-========
-
 **Guper Application**
-======================
+====================================
 
-Hecho por:
+Hecho por**:**
 
-''
-Patricia Lopez
-Nelson Duarte
-''
+
+* *Patricia Lopez*
+
+* *Nelson Duarte*
 
