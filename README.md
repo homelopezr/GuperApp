@@ -1,7 +1,7 @@
 **Guper Application**
 ====================================
 
-Hecho por**:**
+Hecho por:
 
 
 * *Patricia Lopez*
