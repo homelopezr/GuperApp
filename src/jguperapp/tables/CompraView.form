@@ -55,43 +55,46 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <Component id="newButton" linkSize="1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="deleteButton" linkSize="1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="refreshButton" linkSize="1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="saveButton" linkSize="1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="comNumeroLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="comComprobanteLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="proveCodigoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="comObservacionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="proCodigoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="proCantidadLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="comTotalLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="newButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="deleteButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="refreshButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="saveButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="comNumeroLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="comComprobanteLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="proveCodigoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="comObservacionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="proCodigoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="proCantidadLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="comTotalLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="comNumeroField" alignment="0" pref="315" max="32767" attributes="0"/>
+                                  <Component id="comComprobanteField" alignment="0" pref="315" max="32767" attributes="0"/>
+                                  <Component id="proveCodigoField" alignment="0" pref="315" max="32767" attributes="0"/>
+                                  <Component id="comObservacionField" alignment="0" pref="315" max="32767" attributes="0"/>
+                                  <Component id="proCodigoField" alignment="0" pref="315" max="32767" attributes="0"/>
+                                  <Component id="proCantidadField" alignment="0" pref="315" max="32767" attributes="0"/>
+                                  <Component id="comTotalField" alignment="0" pref="315" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="masterScrollPane" pref="380" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="comNumeroField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="comComprobanteField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="proveCodigoField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="comObservacionField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="proCodigoField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="proCantidadField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="comTotalField" alignment="0" pref="315" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="masterScrollPane" pref="380" max="32767" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

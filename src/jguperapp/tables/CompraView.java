@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package jguperapp.tables;
 
 import java.awt.EventQueue;
@@ -406,7 +400,7 @@ public class CompraView extends JPanel {
             public void run() {
                 JFrame frame = new JFrame();
                 frame.setContentPane(new CompraView());
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
                 frame.setVisible(true);
             }
