@@ -44,16 +44,20 @@ public class CompraView extends JPanel {
         list = java.beans.Beans.isDesignTime() ? java.util.Collections.emptyList() : org.jdesktop.observablecollections.ObservableCollections.observableList(query.getResultList());
         masterScrollPane = new javax.swing.JScrollPane();
         masterTable = new javax.swing.JTable();
-        cliCodigoLabel = new javax.swing.JLabel();
-        cliRucLabel = new javax.swing.JLabel();
-        cliNombreLabel = new javax.swing.JLabel();
-        cliDireccionLabel = new javax.swing.JLabel();
-        cliTelefonoLabel = new javax.swing.JLabel();
-        cliCodigoField = new javax.swing.JTextField();
-        cliRucField = new javax.swing.JTextField();
-        cliNombreField = new javax.swing.JTextField();
-        cliDireccionField = new javax.swing.JTextField();
-        cliTelefonoField = new javax.swing.JTextField();
+        comNumeroLabel = new javax.swing.JLabel();
+        comComprobanteLabel = new javax.swing.JLabel();
+        proveCodigoLabel = new javax.swing.JLabel();
+        comObservacionLabel = new javax.swing.JLabel();
+        proCodigoLabel = new javax.swing.JLabel();
+        proCantidadLabel = new javax.swing.JLabel();
+        comTotalLabel = new javax.swing.JLabel();
+        comNumeroField = new javax.swing.JTextField();
+        comComprobanteField = new javax.swing.JTextField();
+        proveCodigoField = new javax.swing.JTextField();
+        comObservacionField = new javax.swing.JTextField();
+        proCodigoField = new javax.swing.JTextField();
+        proCantidadField = new javax.swing.JTextField();
+        comTotalField = new javax.swing.JTextField();
         saveButton = new javax.swing.JButton();
         refreshButton = new javax.swing.JButton();
         newButton = new javax.swing.JButton();
@@ -68,78 +72,106 @@ public class CompraView extends JPanel {
         masterTable.setName("masterTable"); // NOI18N
 
         org.jdesktop.swingbinding.JTableBinding jTableBinding = org.jdesktop.swingbinding.SwingBindings.createJTableBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, list, masterTable);
-        org.jdesktop.swingbinding.JTableBinding.ColumnBinding columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${cliCodigo}"));
-        columnBinding.setColumnName("Cli Codigo");
+        org.jdesktop.swingbinding.JTableBinding.ColumnBinding columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${comNumero}"));
+        columnBinding.setColumnName("Com Numero");
         columnBinding.setColumnClass(Integer.class);
-        columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${cliRuc}"));
-        columnBinding.setColumnName("Cli Ruc");
+        columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${comComprobante}"));
+        columnBinding.setColumnName("Com Comprobante");
+        columnBinding.setColumnClass(Integer.class);
+        columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${proveCodigo}"));
+        columnBinding.setColumnName("Prove Codigo");
+        columnBinding.setColumnClass(Integer.class);
+        columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${comObservacion}"));
+        columnBinding.setColumnName("Com Observacion");
         columnBinding.setColumnClass(String.class);
-        columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${cliNombre}"));
-        columnBinding.setColumnName("Cli Nombre");
-        columnBinding.setColumnClass(String.class);
-        columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${cliDireccion}"));
-        columnBinding.setColumnName("Cli Direccion");
-        columnBinding.setColumnClass(String.class);
-        columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${cliTelefono}"));
-        columnBinding.setColumnName("Cli Telefono");
-        columnBinding.setColumnClass(String.class);
+        columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${proCodigo}"));
+        columnBinding.setColumnName("Pro Codigo");
+        columnBinding.setColumnClass(Integer.class);
+        columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${proCantidad}"));
+        columnBinding.setColumnName("Pro Cantidad");
+        columnBinding.setColumnClass(Integer.class);
+        columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${comTotal}"));
+        columnBinding.setColumnName("Com Total");
+        columnBinding.setColumnClass(Integer.class);
         bindingGroup.addBinding(jTableBinding);
 
         masterScrollPane.setViewportView(masterTable);
 
-        cliCodigoLabel.setText(resourceMap.getString("cliCodigoLabel.text")); // NOI18N
-        cliCodigoLabel.setName("cliCodigoLabel"); // NOI18N
+        comNumeroLabel.setText(resourceMap.getString("comNumeroLabel.text")); // NOI18N
+        comNumeroLabel.setName("comNumeroLabel"); // NOI18N
 
-        cliRucLabel.setText(resourceMap.getString("cliRucLabel.text")); // NOI18N
-        cliRucLabel.setName("cliRucLabel"); // NOI18N
+        comComprobanteLabel.setText(resourceMap.getString("comComprobanteLabel.text")); // NOI18N
+        comComprobanteLabel.setName("comComprobanteLabel"); // NOI18N
 
-        cliNombreLabel.setText(resourceMap.getString("cliNombreLabel.text")); // NOI18N
-        cliNombreLabel.setName("cliNombreLabel"); // NOI18N
+        proveCodigoLabel.setText(resourceMap.getString("proveCodigoLabel.text")); // NOI18N
+        proveCodigoLabel.setName("proveCodigoLabel"); // NOI18N
 
-        cliDireccionLabel.setText(resourceMap.getString("cliDireccionLabel.text")); // NOI18N
-        cliDireccionLabel.setName("cliDireccionLabel"); // NOI18N
+        comObservacionLabel.setText(resourceMap.getString("comObservacionLabel.text")); // NOI18N
+        comObservacionLabel.setName("comObservacionLabel"); // NOI18N
 
-        cliTelefonoLabel.setText(resourceMap.getString("cliTelefonoLabel.text")); // NOI18N
-        cliTelefonoLabel.setName("cliTelefonoLabel"); // NOI18N
+        proCodigoLabel.setText(resourceMap.getString("proCodigoLabel.text")); // NOI18N
+        proCodigoLabel.setName("proCodigoLabel"); // NOI18N
 
-        cliCodigoField.setName("cliCodigoField"); // NOI18N
+        proCantidadLabel.setText(resourceMap.getString("proCantidadLabel.text")); // NOI18N
+        proCantidadLabel.setName("proCantidadLabel"); // NOI18N
 
-        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.cliCodigo}"), cliCodigoField, org.jdesktop.beansbinding.BeanProperty.create("text"));
+        comTotalLabel.setText(resourceMap.getString("comTotalLabel.text")); // NOI18N
+        comTotalLabel.setName("comTotalLabel"); // NOI18N
+
+        comNumeroField.setName("comNumeroField"); // NOI18N
+
+        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.comNumero}"), comNumeroField, org.jdesktop.beansbinding.BeanProperty.create("text"));
         binding.setSourceUnreadableValue("null");
         bindingGroup.addBinding(binding);
-        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), cliCodigoField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), comNumeroField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
 
-        cliRucField.setName("cliRucField"); // NOI18N
+        comComprobanteField.setName("comComprobanteField"); // NOI18N
 
-        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.cliRuc}"), cliRucField, org.jdesktop.beansbinding.BeanProperty.create("text"));
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.comComprobante}"), comComprobanteField, org.jdesktop.beansbinding.BeanProperty.create("text"));
         binding.setSourceUnreadableValue("null");
         bindingGroup.addBinding(binding);
-        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), cliRucField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), comComprobanteField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
 
-        cliNombreField.setName("cliNombreField"); // NOI18N
+        proveCodigoField.setName("proveCodigoField"); // NOI18N
 
-        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.cliNombre}"), cliNombreField, org.jdesktop.beansbinding.BeanProperty.create("text"));
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.proveCodigo}"), proveCodigoField, org.jdesktop.beansbinding.BeanProperty.create("text"));
         binding.setSourceUnreadableValue("null");
         bindingGroup.addBinding(binding);
-        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), cliNombreField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), proveCodigoField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
 
-        cliDireccionField.setName("cliDireccionField"); // NOI18N
+        comObservacionField.setName("comObservacionField"); // NOI18N
 
-        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.cliDireccion}"), cliDireccionField, org.jdesktop.beansbinding.BeanProperty.create("text"));
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.comObservacion}"), comObservacionField, org.jdesktop.beansbinding.BeanProperty.create("text"));
         binding.setSourceUnreadableValue("null");
         bindingGroup.addBinding(binding);
-        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), cliDireccionField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), comObservacionField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
 
-        cliTelefonoField.setName("cliTelefonoField"); // NOI18N
+        proCodigoField.setName("proCodigoField"); // NOI18N
 
-        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.cliTelefono}"), cliTelefonoField, org.jdesktop.beansbinding.BeanProperty.create("text"));
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.proCodigo}"), proCodigoField, org.jdesktop.beansbinding.BeanProperty.create("text"));
         binding.setSourceUnreadableValue("null");
         bindingGroup.addBinding(binding);
-        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), cliTelefonoField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), proCodigoField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
+        bindingGroup.addBinding(binding);
+
+        proCantidadField.setName("proCantidadField"); // NOI18N
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.proCantidad}"), proCantidadField, org.jdesktop.beansbinding.BeanProperty.create("text"));
+        binding.setSourceUnreadableValue("null");
+        bindingGroup.addBinding(binding);
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), proCantidadField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
+        bindingGroup.addBinding(binding);
+
+        comTotalField.setName("comTotalField"); // NOI18N
+
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.comTotal}"), comTotalField, org.jdesktop.beansbinding.BeanProperty.create("text"));
+        binding.setSourceUnreadableValue("null");
+        bindingGroup.addBinding(binding);
+        binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), comTotalField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
 
         saveButton.setText(resourceMap.getString("saveButton.text")); // NOI18N
@@ -178,18 +210,22 @@ public class CompraView extends JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cliCodigoLabel)
-                    .addComponent(cliRucLabel)
-                    .addComponent(cliNombreLabel)
-                    .addComponent(cliDireccionLabel)
-                    .addComponent(cliTelefonoLabel))
+                    .addComponent(comNumeroLabel)
+                    .addComponent(comComprobanteLabel)
+                    .addComponent(proveCodigoLabel)
+                    .addComponent(comObservacionLabel)
+                    .addComponent(proCodigoLabel)
+                    .addComponent(proCantidadLabel)
+                    .addComponent(comTotalLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cliCodigoField, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
-                    .addComponent(cliRucField, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
-                    .addComponent(cliNombreField, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
-                    .addComponent(cliDireccionField, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
-                    .addComponent(cliTelefonoField, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE))
+                    .addComponent(comNumeroField, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
+                    .addComponent(comComprobanteField, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
+                    .addComponent(proveCodigoField, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
+                    .addComponent(comObservacionField, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
+                    .addComponent(proCodigoField, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
+                    .addComponent(proCantidadField, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
+                    .addComponent(comTotalField, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
@@ -206,24 +242,32 @@ public class CompraView extends JPanel {
                 .addComponent(masterScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cliCodigoLabel)
-                    .addComponent(cliCodigoField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(comNumeroLabel)
+                    .addComponent(comNumeroField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cliRucLabel)
-                    .addComponent(cliRucField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(comComprobanteLabel)
+                    .addComponent(comComprobanteField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cliNombreLabel)
-                    .addComponent(cliNombreField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(proveCodigoLabel)
+                    .addComponent(proveCodigoField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cliDireccionLabel)
-                    .addComponent(cliDireccionField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(comObservacionLabel)
+                    .addComponent(comObservacionField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cliTelefonoLabel)
-                    .addComponent(cliTelefonoField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(proCodigoLabel)
+                    .addComponent(proCodigoField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(proCantidadLabel)
+                    .addComponent(proCantidadField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(comTotalLabel)
+                    .addComponent(comTotalField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(saveButton)
@@ -272,9 +316,9 @@ public class CompraView extends JPanel {
 
     private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
         int[] selected = masterTable.getSelectedRows();
-        List<jguperapp.tables.Cliente> toRemove = new ArrayList<jguperapp.tables.Cliente>(selected.length);
+        List<jguperapp.tables.Compra> toRemove = new ArrayList<jguperapp.tables.Compra>(selected.length);
         for (int idx = 0; idx < selected.length; idx++) {
-            jguperapp.tables.Cliente c = list.get(masterTable.convertRowIndexToModel(selected[idx]));
+            jguperapp.tables.Compra c = list.get(masterTable.convertRowIndexToModel(selected[idx]));
             toRemove.add(c);
             entityManager.remove(c);
         }
@@ -282,7 +326,7 @@ public class CompraView extends JPanel {
     }//GEN-LAST:event_deleteButtonActionPerformed
 
     private void newButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newButtonActionPerformed
-        jguperapp.tables.Cliente c = new jguperapp.tables.Cliente();
+        jguperapp.tables.Compra c = new jguperapp.tables.Compra();
         entityManager.persist(c);
         list.add(c);
         int row = list.size() - 1;
@@ -297,8 +341,8 @@ public class CompraView extends JPanel {
         } catch (RollbackException rex) {
             rex.printStackTrace();
             entityManager.getTransaction().begin();
-            List<jguperapp.tables.Cliente> merged = new ArrayList<jguperapp.tables.Cliente>(list.size());
-            for (jguperapp.tables.Cliente c : list) {
+            List<jguperapp.tables.Compra> merged = new ArrayList<jguperapp.tables.Compra>(list.size());
+            for (jguperapp.tables.Compra c : list) {
                 merged.add(entityManager.merge(c));
             }
             list.clear();
@@ -308,22 +352,26 @@ public class CompraView extends JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField cliCodigoField;
-    private javax.swing.JLabel cliCodigoLabel;
-    private javax.swing.JTextField cliDireccionField;
-    private javax.swing.JLabel cliDireccionLabel;
-    private javax.swing.JTextField cliNombreField;
-    private javax.swing.JLabel cliNombreLabel;
-    private javax.swing.JTextField cliRucField;
-    private javax.swing.JLabel cliRucLabel;
-    private javax.swing.JTextField cliTelefonoField;
-    private javax.swing.JLabel cliTelefonoLabel;
+    private javax.swing.JTextField comComprobanteField;
+    private javax.swing.JLabel comComprobanteLabel;
+    private javax.swing.JTextField comNumeroField;
+    private javax.swing.JLabel comNumeroLabel;
+    private javax.swing.JTextField comObservacionField;
+    private javax.swing.JLabel comObservacionLabel;
+    private javax.swing.JTextField comTotalField;
+    private javax.swing.JLabel comTotalLabel;
     private javax.swing.JButton deleteButton;
     private javax.persistence.EntityManager entityManager;
-    private java.util.List<jguperapp.tables.Cliente> list;
+    private java.util.List<jguperapp.tables.Compra> list;
     private javax.swing.JScrollPane masterScrollPane;
     private javax.swing.JTable masterTable;
     private javax.swing.JButton newButton;
+    private javax.swing.JTextField proCantidadField;
+    private javax.swing.JLabel proCantidadLabel;
+    private javax.swing.JTextField proCodigoField;
+    private javax.swing.JLabel proCodigoLabel;
+    private javax.swing.JTextField proveCodigoField;
+    private javax.swing.JLabel proveCodigoLabel;
     private javax.persistence.Query query;
     private javax.swing.JButton refreshButton;
     private javax.swing.JButton saveButton;

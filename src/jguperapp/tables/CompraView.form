@@ -31,7 +31,7 @@
         <Property name="observable" type="boolean" value="true"/>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;jguperapp.tables.Cliente&gt;"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;jguperapp.tables.Compra&gt;"/>
         <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
       </AuxValues>
@@ -68,19 +68,23 @@
           <Group type="102" attributes="0">
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="cliCodigoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="cliRucLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="cliNombreLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="cliDireccionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="cliTelefonoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="comNumeroLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="comComprobanteLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="proveCodigoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="comObservacionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="proCodigoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="proCantidadLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="comTotalLabel" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="cliCodigoField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="cliRucField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="cliNombreField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="cliDireccionField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="cliTelefonoField" alignment="0" pref="315" max="32767" attributes="0"/>
+                  <Component id="comNumeroField" alignment="0" pref="315" max="32767" attributes="0"/>
+                  <Component id="comComprobanteField" alignment="0" pref="315" max="32767" attributes="0"/>
+                  <Component id="proveCodigoField" alignment="0" pref="315" max="32767" attributes="0"/>
+                  <Component id="comObservacionField" alignment="0" pref="315" max="32767" attributes="0"/>
+                  <Component id="proCodigoField" alignment="0" pref="315" max="32767" attributes="0"/>
+                  <Component id="proCantidadField" alignment="0" pref="315" max="32767" attributes="0"/>
+                  <Component id="comTotalField" alignment="0" pref="315" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
@@ -98,28 +102,38 @@
               <Component id="masterScrollPane" pref="130" max="32767" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cliCodigoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cliCodigoField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="comNumeroLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="comNumeroField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cliRucLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cliRucField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="comComprobanteLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="comComprobanteField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cliNombreLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cliNombreField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="proveCodigoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="proveCodigoField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cliDireccionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cliDireccionField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="comObservacionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="comObservacionField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cliTelefonoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cliTelefonoField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="proCodigoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="proCodigoField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="proCantidadLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="proCantidadField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="comTotalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="comTotalField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="1"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -150,25 +164,33 @@
           </Properties>
           <BindingProperties>
             <BindingProperty name="elements" source="list" target="masterTable" targetPath="elements" updateStrategy="0" immediately="false">
-              <Subbinding sourcePath="${cliCodigo}">
+              <Subbinding sourcePath="${comNumero}">
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="0"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
               </Subbinding>
-              <Subbinding sourcePath="${cliRuc}">
+              <Subbinding sourcePath="${comComprobante}">
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="1"/>
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
               </Subbinding>
-              <Subbinding sourcePath="${cliNombre}">
+              <Subbinding sourcePath="${proveCodigo}">
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="2"/>
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
               </Subbinding>
-              <Subbinding sourcePath="${cliDireccion}">
+              <Subbinding sourcePath="${comObservacion}">
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="3"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
-              <Subbinding sourcePath="${cliTelefono}">
+              <Subbinding sourcePath="${proCodigo}">
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="4"/>
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${proCantidad}">
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="5"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${comTotal}">
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="6"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
               </Subbinding>
             </BindingProperty>
           </BindingProperties>
@@ -179,89 +201,123 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="cliCodigoLabel">
+    <Component class="javax.swing.JLabel" name="comNumeroLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="cliCodigoLabel.text"/>
-        <Property name="name" type="java.lang.String" value="cliCodigoLabel" noResource="true"/>
+        <Property name="text" type="java.lang.String" resourceKey="comNumeroLabel.text"/>
+        <Property name="name" type="java.lang.String" value="comNumeroLabel" noResource="true"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="cliRucLabel">
+    <Component class="javax.swing.JLabel" name="comComprobanteLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="cliRucLabel.text"/>
-        <Property name="name" type="java.lang.String" value="cliRucLabel" noResource="true"/>
+        <Property name="text" type="java.lang.String" resourceKey="comComprobanteLabel.text"/>
+        <Property name="name" type="java.lang.String" value="comComprobanteLabel" noResource="true"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="cliNombreLabel">
+    <Component class="javax.swing.JLabel" name="proveCodigoLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="cliNombreLabel.text"/>
-        <Property name="name" type="java.lang.String" value="cliNombreLabel" noResource="true"/>
+        <Property name="text" type="java.lang.String" resourceKey="proveCodigoLabel.text"/>
+        <Property name="name" type="java.lang.String" value="proveCodigoLabel" noResource="true"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="cliDireccionLabel">
+    <Component class="javax.swing.JLabel" name="comObservacionLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="cliDireccionLabel.text"/>
-        <Property name="name" type="java.lang.String" value="cliDireccionLabel" noResource="true"/>
+        <Property name="text" type="java.lang.String" resourceKey="comObservacionLabel.text"/>
+        <Property name="name" type="java.lang.String" value="comObservacionLabel" noResource="true"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="cliTelefonoLabel">
+    <Component class="javax.swing.JLabel" name="proCodigoLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="cliTelefonoLabel.text"/>
-        <Property name="name" type="java.lang.String" value="cliTelefonoLabel" noResource="true"/>
+        <Property name="text" type="java.lang.String" resourceKey="proCodigoLabel.text"/>
+        <Property name="name" type="java.lang.String" value="proCodigoLabel" noResource="true"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="cliCodigoField">
+    <Component class="javax.swing.JLabel" name="proCantidadLabel">
       <Properties>
-        <Property name="name" type="java.lang.String" value="cliCodigoField" noResource="true"/>
+        <Property name="text" type="java.lang.String" resourceKey="proCantidadLabel.text"/>
+        <Property name="name" type="java.lang.String" value="proCantidadLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="comTotalLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="comTotalLabel.text"/>
+        <Property name="name" type="java.lang.String" value="comTotalLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="comNumeroField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="comNumeroField" noResource="true"/>
       </Properties>
       <BindingProperties>
-        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.cliCodigo}" target="cliCodigoField" targetPath="text" updateStrategy="0" immediately="false">
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.comNumero}" target="comNumeroField" targetPath="text" updateStrategy="0" immediately="false">
           <Property name="incompletePathValue" type="java.lang.String" value="null"/>
         </BindingProperty>
-        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="cliCodigoField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="comNumeroField" targetPath="enabled" updateStrategy="1" immediately="false"/>
       </BindingProperties>
     </Component>
-    <Component class="javax.swing.JTextField" name="cliRucField">
+    <Component class="javax.swing.JTextField" name="comComprobanteField">
       <Properties>
-        <Property name="name" type="java.lang.String" value="cliRucField" noResource="true"/>
+        <Property name="name" type="java.lang.String" value="comComprobanteField" noResource="true"/>
       </Properties>
       <BindingProperties>
-        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.cliRuc}" target="cliRucField" targetPath="text" updateStrategy="0" immediately="false">
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.comComprobante}" target="comComprobanteField" targetPath="text" updateStrategy="0" immediately="false">
           <Property name="incompletePathValue" type="java.lang.String" value="null"/>
         </BindingProperty>
-        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="cliRucField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="comComprobanteField" targetPath="enabled" updateStrategy="1" immediately="false"/>
       </BindingProperties>
     </Component>
-    <Component class="javax.swing.JTextField" name="cliNombreField">
+    <Component class="javax.swing.JTextField" name="proveCodigoField">
       <Properties>
-        <Property name="name" type="java.lang.String" value="cliNombreField" noResource="true"/>
+        <Property name="name" type="java.lang.String" value="proveCodigoField" noResource="true"/>
       </Properties>
       <BindingProperties>
-        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.cliNombre}" target="cliNombreField" targetPath="text" updateStrategy="0" immediately="false">
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.proveCodigo}" target="proveCodigoField" targetPath="text" updateStrategy="0" immediately="false">
           <Property name="incompletePathValue" type="java.lang.String" value="null"/>
         </BindingProperty>
-        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="cliNombreField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="proveCodigoField" targetPath="enabled" updateStrategy="1" immediately="false"/>
       </BindingProperties>
     </Component>
-    <Component class="javax.swing.JTextField" name="cliDireccionField">
+    <Component class="javax.swing.JTextField" name="comObservacionField">
       <Properties>
-        <Property name="name" type="java.lang.String" value="cliDireccionField" noResource="true"/>
+        <Property name="name" type="java.lang.String" value="comObservacionField" noResource="true"/>
       </Properties>
       <BindingProperties>
-        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.cliDireccion}" target="cliDireccionField" targetPath="text" updateStrategy="0" immediately="false">
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.comObservacion}" target="comObservacionField" targetPath="text" updateStrategy="0" immediately="false">
           <Property name="incompletePathValue" type="java.lang.String" value="null"/>
         </BindingProperty>
-        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="cliDireccionField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="comObservacionField" targetPath="enabled" updateStrategy="1" immediately="false"/>
       </BindingProperties>
     </Component>
-    <Component class="javax.swing.JTextField" name="cliTelefonoField">
+    <Component class="javax.swing.JTextField" name="proCodigoField">
       <Properties>
-        <Property name="name" type="java.lang.String" value="cliTelefonoField" noResource="true"/>
+        <Property name="name" type="java.lang.String" value="proCodigoField" noResource="true"/>
       </Properties>
       <BindingProperties>
-        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.cliTelefono}" target="cliTelefonoField" targetPath="text" updateStrategy="0" immediately="false">
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.proCodigo}" target="proCodigoField" targetPath="text" updateStrategy="0" immediately="false">
           <Property name="incompletePathValue" type="java.lang.String" value="null"/>
         </BindingProperty>
-        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="cliTelefonoField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="proCodigoField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="proCantidadField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="proCantidadField" noResource="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.proCantidad}" target="proCantidadField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="proCantidadField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="comTotalField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="comTotalField" noResource="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.comTotal}" target="comTotalField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="comTotalField" targetPath="enabled" updateStrategy="1" immediately="false"/>
       </BindingProperties>
     </Component>
     <Component class="javax.swing.JButton" name="saveButton">
