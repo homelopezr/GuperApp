@@ -115,92 +115,110 @@ public class JGuperView extends FrameView {
     
     @Action
     public void newCompra(){
-        if (aboutBox == null) {
-            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
-            aboutBox = new JGuperAboutBox(mainFrame);
-            aboutBox.setLocationRelativeTo(mainFrame);
-        }
-        JGuperApp.getApplication().show(aboutBox);
+        JFrame frame = new JFrame("Compra");
+            compraView = new CompraView();
+        frame.setContentPane(compraView);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.pack();
+        JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+        frame.setLocationRelativeTo(mainFrame);
+        JGuperApp.getApplication().show(frame);
     }
     
     @Action
     public void newEquipo(){
-        if (aboutBox == null) {
-            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
-            aboutBox = new JGuperAboutBox(mainFrame);
-            aboutBox.setLocationRelativeTo(mainFrame);
-        }
-        JGuperApp.getApplication().show(aboutBox);
+        JFrame frame = new JFrame("Equipo");
+            equipoView = new EquipoView();
+        frame.setContentPane(equipoView);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.pack();
+        JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+        frame.setLocationRelativeTo(mainFrame);
+        JGuperApp.getApplication().show(frame);
     }
     
     @Action
     public void newFuncionarios(){
-        if (aboutBox == null) {
-            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
-            aboutBox = new JGuperAboutBox(mainFrame);
-            aboutBox.setLocationRelativeTo(mainFrame);
-        }
-        JGuperApp.getApplication().show(aboutBox);
+        JFrame frame = new JFrame("Funcionarios");
+            funcionariosView = new FuncionariosView();
+        frame.setContentPane(funcionariosView);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.pack();
+        JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+        frame.setLocationRelativeTo(mainFrame);
+        JGuperApp.getApplication().show(frame);
     }
     
     @Action
     public void newProducto(){
-        if (aboutBox == null) {
-            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
-            aboutBox = new JGuperAboutBox(mainFrame);
-            aboutBox.setLocationRelativeTo(mainFrame);
-        }
-        JGuperApp.getApplication().show(aboutBox);
+        JFrame frame = new JFrame("Producto");
+            productoView = new ProductoView();
+        frame.setContentPane(productoView);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.pack();
+        JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+        frame.setLocationRelativeTo(mainFrame);
+        JGuperApp.getApplication().show(frame);
     }
     
     @Action
     public void newProveedor(){
-        if (aboutBox == null) {
-            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
-            aboutBox = new JGuperAboutBox(mainFrame);
-            aboutBox.setLocationRelativeTo(mainFrame);
-        }
-        JGuperApp.getApplication().show(aboutBox);
+        JFrame frame = new JFrame("Proveedor");
+            proveedorView = new ProveedorView();
+        frame.setContentPane(proveedorView);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.pack();
+        JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+        frame.setLocationRelativeTo(mainFrame);
+        JGuperApp.getApplication().show(frame);
     }
     
     @Action
     public void newRecurso(){
-        if (aboutBox == null) {
-            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
-            aboutBox = new JGuperAboutBox(mainFrame);
-            aboutBox.setLocationRelativeTo(mainFrame);
-        }
-        JGuperApp.getApplication().show(aboutBox);
+        JFrame frame = new JFrame("Recursos");
+            recursosView = new RecursosView();
+        frame.setContentPane(recursosView);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.pack();
+        JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+        frame.setLocationRelativeTo(mainFrame);
+        JGuperApp.getApplication().show(frame);
     }
     
     @Action
     public void newServicio(){
-        if (aboutBox == null) {
-            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
-            aboutBox = new JGuperAboutBox(mainFrame);
-            aboutBox.setLocationRelativeTo(mainFrame);
-        }
-        JGuperApp.getApplication().show(aboutBox);
+        JFrame frame = new JFrame("Servicio");
+            servicioView = new ServicioView();
+        frame.setContentPane(servicioView);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.pack();
+        JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+        frame.setLocationRelativeTo(mainFrame);
+        JGuperApp.getApplication().show(frame);
     }
     
     @Action
     public void newUsuario(){
-        if (aboutBox == null) {
-            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
-            aboutBox = new JGuperAboutBox(mainFrame);
-            aboutBox.setLocationRelativeTo(mainFrame);
-        }
-        JGuperApp.getApplication().show(aboutBox);
+        JFrame frame = new JFrame("Cliente");
+            usuarioView = new UsuarioView();
+        frame.setContentPane(usuarioView);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.pack();
+        JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+        frame.setLocationRelativeTo(mainFrame);
+        JGuperApp.getApplication().show(frame);
     }
     
     @Action
     public void newVenta(){
-        if (aboutBox == null) {
-            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
-            aboutBox = new JGuperAboutBox(mainFrame);
-            aboutBox.setLocationRelativeTo(mainFrame);
-        }
-        JGuperApp.getApplication().show(aboutBox);
+        JFrame frame = new JFrame("Cliente");
+            ventaView = new VentaView();
+        frame.setContentPane(ventaView);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.pack();
+        JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+        frame.setLocationRelativeTo(mainFrame);
+        JGuperApp.getApplication().show(frame);
     }
 
     /** This method is called from within the constructor to
