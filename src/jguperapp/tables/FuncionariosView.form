@@ -81,13 +81,13 @@
                               </Group>
                               <EmptySpace min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="funCodigoField" alignment="0" pref="315" max="32767" attributes="0"/>
-                                  <Component id="funCedulaField" alignment="0" pref="315" max="32767" attributes="0"/>
-                                  <Component id="funNombreField" alignment="0" pref="315" max="32767" attributes="0"/>
-                                  <Component id="funDireccionField" alignment="0" pref="315" max="32767" attributes="0"/>
-                                  <Component id="funTelefonoField" alignment="0" pref="315" max="32767" attributes="0"/>
-                                  <Component id="funIngresoField" alignment="0" pref="315" max="32767" attributes="0"/>
-                                  <Component id="funSituacionField" alignment="0" pref="315" max="32767" attributes="0"/>
+                                  <Component id="funCodigoField" alignment="0" pref="336" max="32767" attributes="0"/>
+                                  <Component id="funCedulaField" alignment="0" pref="336" max="32767" attributes="0"/>
+                                  <Component id="funNombreField" alignment="0" pref="336" max="32767" attributes="0"/>
+                                  <Component id="funDireccionField" alignment="0" pref="336" max="32767" attributes="0"/>
+                                  <Component id="funTelefonoField" alignment="0" pref="336" max="32767" attributes="0"/>
+                                  <Component id="funIngresoField" alignment="0" pref="336" max="32767" attributes="0"/>
+                                  <Component id="funSituacionField" alignment="0" pref="336" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Component id="masterScrollPane" pref="380" max="32767" attributes="0"/>
@@ -165,7 +165,7 @@
           <Properties>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
               <TableColumnModel selectionModel="0">
-                <Column maxWidth="-1" minWidth="35" prefWidth="-1" resizable="true">
+                <Column maxWidth="-1" minWidth="45" prefWidth="45" resizable="true">
                   <Title resourceKey="masterTable.columnModel.title0"/>
                   <Editor/>
                   <Renderer/>
