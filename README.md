@@ -6,8 +6,8 @@ GuperApp
 
 Hecho por:
 
-´´
+''
 Patricia Lopez
 Nelson Duarte
-´´
+''
 
