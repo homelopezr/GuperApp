@@ -2,15 +2,15 @@
 <persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
   <persistence-unit name="guper?zeroDateTimeBehavior=convertToNullPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-    <class>jguperapp.Cliente</class>
-    <class>jguperapp.Equipo</class>
-    <class>jguperapp.Funcionarios</class>
-    <class>jguperapp.Producto</class>
-    <class>jguperapp.Servicio</class>
-    <class>jguperapp.Recursos</class>
-    <class>jguperapp.Usuario</class>
-    <class>jguperapp.Venta</class>
-    <class>jguperapp.Proveedor</class>
+    <class>jguperapp.tables.Servicio</class>
+    <class>jguperapp.tables.Venta</class>
+    <class>jguperapp.tables.Funcionarios</class>
+    <class>jguperapp.tables.Producto</class>
+    <class>jguperapp.tables.Usuario</class>
+    <class>jguperapp.tables.Cliente</class>
+    <class>jguperapp.tables.Equipo</class>
+    <class>jguperapp.tables.Recursos</class>
+    <class>jguperapp.tables.Proveedor</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/guper?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
