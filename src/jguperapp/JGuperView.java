@@ -104,7 +104,6 @@ public class JGuperView extends FrameView {
     @Action
     public void newCliente(){
         JFrame frame = new JFrame("Cliente");
-            clienteView = new ClienteView();
         frame.setContentPane(clienteView);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
@@ -116,7 +115,6 @@ public class JGuperView extends FrameView {
     @Action
     public void newCompra(){
         JFrame frame = new JFrame("Compra");
-            compraView = new CompraView();
         frame.setContentPane(compraView);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
@@ -128,7 +126,6 @@ public class JGuperView extends FrameView {
     @Action
     public void newEquipo(){
         JFrame frame = new JFrame("Equipo");
-            equipoView = new EquipoView();
         frame.setContentPane(equipoView);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
@@ -140,7 +137,6 @@ public class JGuperView extends FrameView {
     @Action
     public void newFuncionarios(){
         JFrame frame = new JFrame("Funcionarios");
-            funcionariosView = new FuncionariosView();
         frame.setContentPane(funcionariosView);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
@@ -152,7 +148,6 @@ public class JGuperView extends FrameView {
     @Action
     public void newProducto(){
         JFrame frame = new JFrame("Producto");
-            productoView = new ProductoView();
         frame.setContentPane(productoView);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
@@ -164,7 +159,6 @@ public class JGuperView extends FrameView {
     @Action
     public void newProveedor(){
         JFrame frame = new JFrame("Proveedor");
-            proveedorView = new ProveedorView();
         frame.setContentPane(proveedorView);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
@@ -176,7 +170,6 @@ public class JGuperView extends FrameView {
     @Action
     public void newRecurso(){
         JFrame frame = new JFrame("Recursos");
-            recursosView = new RecursosView();
         frame.setContentPane(recursosView);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
@@ -188,7 +181,6 @@ public class JGuperView extends FrameView {
     @Action
     public void newServicio(){
         JFrame frame = new JFrame("Servicio");
-            servicioView = new ServicioView();
         frame.setContentPane(servicioView);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
@@ -199,8 +191,7 @@ public class JGuperView extends FrameView {
     
     @Action
     public void newUsuario(){
-        JFrame frame = new JFrame("Cliente");
-            usuarioView = new UsuarioView();
+        JFrame frame = new JFrame("Usuario");
         frame.setContentPane(usuarioView);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
@@ -211,8 +202,7 @@ public class JGuperView extends FrameView {
     
     @Action
     public void newVenta(){
-        JFrame frame = new JFrame("Cliente");
-            ventaView = new VentaView();
+        JFrame frame = new JFrame("Venta");
         frame.setContentPane(ventaView);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
@@ -430,5 +420,17 @@ public class JGuperView extends FrameView {
     private ServicioView servicioView;
     private UsuarioView usuarioView;
     private VentaView ventaView;
-    
+
+    private void initFrames(){
+        clienteView = new ClienteView();
+        compraView = new CompraView();
+        equipoView = new EquipoView();
+        funcionariosView = new FuncionariosView();
+        productoView = new ProductoView();
+        proveedorView = new ProveedorView();
+        recursosView = new RecursosView();
+        servicioView = new ServicioView();
+        usuarioView = new UsuarioView();
+        ventaView = new VentaView();
+    }
 }
