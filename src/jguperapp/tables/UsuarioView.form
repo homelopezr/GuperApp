@@ -55,37 +55,40 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <Component id="newButton" linkSize="1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="deleteButton" linkSize="1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="refreshButton" linkSize="1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="saveButton" linkSize="1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="usuCodigoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="usuNombreLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="usuClaveLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="usuNivelLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="newButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="deleteButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="refreshButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="saveButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="usuCodigoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="usuNombreLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="usuClaveLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="usuNivelLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="usuCodigoField" alignment="0" pref="315" max="32767" attributes="0"/>
+                                  <Component id="usuNombreField" alignment="0" pref="315" max="32767" attributes="0"/>
+                                  <Component id="usuClaveField" alignment="0" pref="315" max="32767" attributes="0"/>
+                                  <Component id="usuNivelField" alignment="0" pref="315" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="masterScrollPane" pref="380" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="usuCodigoField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="usuNombreField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="usuClaveField" alignment="0" pref="315" max="32767" attributes="0"/>
-                  <Component id="usuNivelField" alignment="0" pref="315" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="masterScrollPane" pref="380" max="32767" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
