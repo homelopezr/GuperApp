@@ -102,9 +102,20 @@ public class JGuperView extends FrameView {
 
         mainPanel = new javax.swing.JPanel();
         menuBar = new javax.swing.JMenuBar();
-        javax.swing.JMenu fileMenu = new javax.swing.JMenu();
-        javax.swing.JMenuItem exitMenuItem = new javax.swing.JMenuItem();
-        javax.swing.JMenu helpMenu = new javax.swing.JMenu();
+        javax.swing.JMenu mFile = new javax.swing.JMenu();
+        mNuevo = new javax.swing.JMenu();
+        miNCliente = new javax.swing.JMenuItem();
+        miNCompra = new javax.swing.JMenuItem();
+        miNEquipo = new javax.swing.JMenuItem();
+        miNFuncionarios = new javax.swing.JMenuItem();
+        miNProduct = new javax.swing.JMenuItem();
+        miNProvee = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        javax.swing.JMenuItem miSalir = new javax.swing.JMenuItem();
+        javax.swing.JMenu MHelp = new javax.swing.JMenu();
         javax.swing.JMenuItem aboutMenuItem = new javax.swing.JMenuItem();
         statusPanel = new javax.swing.JPanel();
         javax.swing.JSeparator statusPanelSeparator = new javax.swing.JSeparator();
@@ -128,24 +139,81 @@ public class JGuperView extends FrameView {
         menuBar.setName("menuBar"); // NOI18N
 
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(jguperapp.JGuperApp.class).getContext().getResourceMap(JGuperView.class);
-        fileMenu.setText(resourceMap.getString("fileMenu.text")); // NOI18N
-        fileMenu.setName("fileMenu"); // NOI18N
+        mFile.setText(resourceMap.getString("mFile.text")); // NOI18N
+        mFile.setName("mFile"); // NOI18N
+
+        mNuevo.setText(resourceMap.getString("mNuevo.text")); // NOI18N
+        mNuevo.setName("mNuevo"); // NOI18N
+
+        miNCliente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_1, java.awt.event.InputEvent.CTRL_MASK));
+        miNCliente.setText(resourceMap.getString("miNCliente.text")); // NOI18N
+        miNCliente.setName("miNCliente"); // NOI18N
+        mNuevo.add(miNCliente);
+
+        miNCompra.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_2, java.awt.event.InputEvent.CTRL_MASK));
+        miNCompra.setText(resourceMap.getString("miNCompra.text")); // NOI18N
+        miNCompra.setName("miNCompra"); // NOI18N
+        mNuevo.add(miNCompra);
+
+        miNEquipo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_3, java.awt.event.InputEvent.CTRL_MASK));
+        miNEquipo.setText(resourceMap.getString("miNEquipo.text")); // NOI18N
+        miNEquipo.setName("miNEquipo"); // NOI18N
+        mNuevo.add(miNEquipo);
+
+        miNFuncionarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_4, java.awt.event.InputEvent.CTRL_MASK));
+        miNFuncionarios.setText(resourceMap.getString("miNFuncionarios.text")); // NOI18N
+        miNFuncionarios.setName("miNFuncionarios"); // NOI18N
+        mNuevo.add(miNFuncionarios);
+
+        miNProduct.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_5, java.awt.event.InputEvent.CTRL_MASK));
+        miNProduct.setText(resourceMap.getString("miNProduct.text")); // NOI18N
+        miNProduct.setName("miNProduct"); // NOI18N
+        mNuevo.add(miNProduct);
+
+        miNProvee.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_6, java.awt.event.InputEvent.CTRL_MASK));
+        miNProvee.setText(resourceMap.getString("miNProvee.text")); // NOI18N
+        miNProvee.setName("miNProvee"); // NOI18N
+        mNuevo.add(miNProvee);
+
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_7, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem1.setText(resourceMap.getString("jMenuItem1.text")); // NOI18N
+        jMenuItem1.setName("jMenuItem1"); // NOI18N
+        mNuevo.add(jMenuItem1);
+
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_8, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem2.setText(resourceMap.getString("jMenuItem2.text")); // NOI18N
+        jMenuItem2.setName("jMenuItem2"); // NOI18N
+        mNuevo.add(jMenuItem2);
+
+        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_9, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem3.setText(resourceMap.getString("jMenuItem3.text")); // NOI18N
+        jMenuItem3.setName("jMenuItem3"); // NOI18N
+        mNuevo.add(jMenuItem3);
+
+        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_0, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem4.setText(resourceMap.getString("jMenuItem4.text")); // NOI18N
+        jMenuItem4.setName("jMenuItem4"); // NOI18N
+        mNuevo.add(jMenuItem4);
+
+        mFile.add(mNuevo);
 
         javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(jguperapp.JGuperApp.class).getContext().getActionMap(JGuperView.class, this);
-        exitMenuItem.setAction(actionMap.get("quit")); // NOI18N
-        exitMenuItem.setName("exitMenuItem"); // NOI18N
-        fileMenu.add(exitMenuItem);
+        miSalir.setAction(actionMap.get("quit")); // NOI18N
+        miSalir.setText(resourceMap.getString("miSalir.text")); // NOI18N
+        miSalir.setName("miSalir"); // NOI18N
+        mFile.add(miSalir);
 
-        menuBar.add(fileMenu);
+        menuBar.add(mFile);
 
-        helpMenu.setText(resourceMap.getString("helpMenu.text")); // NOI18N
-        helpMenu.setName("helpMenu"); // NOI18N
+        MHelp.setText(resourceMap.getString("MHelp.text")); // NOI18N
+        MHelp.setName("MHelp"); // NOI18N
 
         aboutMenuItem.setAction(actionMap.get("showAboutBox")); // NOI18N
+        aboutMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
         aboutMenuItem.setName("aboutMenuItem"); // NOI18N
-        helpMenu.add(aboutMenuItem);
+        MHelp.add(aboutMenuItem);
 
-        menuBar.add(helpMenu);
+        menuBar.add(MHelp);
 
         statusPanel.setName("statusPanel"); // NOI18N
 
@@ -190,8 +258,19 @@ public class JGuperView extends FrameView {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenu mNuevo;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JMenuBar menuBar;
+    private javax.swing.JMenuItem miNCliente;
+    private javax.swing.JMenuItem miNCompra;
+    private javax.swing.JMenuItem miNEquipo;
+    private javax.swing.JMenuItem miNFuncionarios;
+    private javax.swing.JMenuItem miNProduct;
+    private javax.swing.JMenuItem miNProvee;
     private javax.swing.JProgressBar progressBar;
     private javax.swing.JLabel statusAnimationLabel;
     private javax.swing.JLabel statusMessageLabel;
