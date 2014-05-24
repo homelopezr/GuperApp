@@ -35,6 +35,7 @@ public class JGuperView extends FrameView {
         super(app);
 
         initComponents();
+        initFrames();
 
         // status bar initialization - message timeout, idle icon and busy animation, etc
         ResourceMap resourceMap = getResourceMap();
