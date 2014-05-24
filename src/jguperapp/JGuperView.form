@@ -47,6 +47,9 @@
               <SubComponents>
                 <MenuItem class="javax.swing.JMenuItem" name="miNCliente">
                   <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="jguperapp.JGuperView" id="newCliente" methodName="newCliente"/>
+                    </Property>
                     <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                       <KeyStroke key="Ctrl+1"/>
                     </Property>
@@ -56,6 +59,9 @@
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="miNCompra">
                   <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="jguperapp.JGuperView" id="newCompra" methodName="newCompra"/>
+                    </Property>
                     <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                       <KeyStroke key="Ctrl+2"/>
                     </Property>
@@ -65,6 +71,9 @@
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="miNEquipo">
                   <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="jguperapp.JGuperView" id="newEquipo" methodName="newEquipo"/>
+                    </Property>
                     <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                       <KeyStroke key="Ctrl+3"/>
                     </Property>
@@ -74,6 +83,9 @@
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="miNFuncionarios">
                   <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="jguperapp.JGuperView" id="newFuncionarios" methodName="newFuncionarios"/>
+                    </Property>
                     <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                       <KeyStroke key="Ctrl+4"/>
                     </Property>
@@ -83,6 +95,9 @@
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="miNProduct">
                   <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="jguperapp.JGuperView" id="newProducto" methodName="newProducto"/>
+                    </Property>
                     <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                       <KeyStroke key="Ctrl+5"/>
                     </Property>

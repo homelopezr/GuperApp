@@ -4,17 +4,27 @@
 
 package jguperapp;
 
-import org.jdesktop.application.Action;
-import org.jdesktop.application.ResourceMap;
-import org.jdesktop.application.SingleFrameApplication;
-import org.jdesktop.application.FrameView;
-import org.jdesktop.application.TaskMonitor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.Timer;
 import javax.swing.Icon;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
+import javax.swing.Timer;
+import jguperapp.tables.ClienteView;
+import jguperapp.tables.CompraView;
+import jguperapp.tables.EquipoView;
+import jguperapp.tables.FuncionariosView;
+import jguperapp.tables.ProductoView;
+import jguperapp.tables.ProveedorView;
+import jguperapp.tables.RecursosView;
+import jguperapp.tables.ServicioView;
+import jguperapp.tables.UsuarioView;
+import jguperapp.tables.VentaView;
+import org.jdesktop.application.Action;
+import org.jdesktop.application.FrameView;
+import org.jdesktop.application.ResourceMap;
+import org.jdesktop.application.SingleFrameApplication;
+import org.jdesktop.application.TaskMonitor;
 
 /**
  * The application's main frame.
@@ -90,6 +100,108 @@ public class JGuperView extends FrameView {
         }
         JGuperApp.getApplication().show(aboutBox);
     }
+    
+    @Action
+    public void newCliente(){
+        JFrame frame = new JFrame("Cliente");
+            clienteView = new ClienteView();
+        frame.setContentPane(clienteView);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.pack();
+        JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+        frame.setLocationRelativeTo(mainFrame);
+        JGuperApp.getApplication().show(frame);
+    }
+    
+    @Action
+    public void newCompra(){
+        if (aboutBox == null) {
+            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+            aboutBox = new JGuperAboutBox(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        JGuperApp.getApplication().show(aboutBox);
+    }
+    
+    @Action
+    public void newEquipo(){
+        if (aboutBox == null) {
+            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+            aboutBox = new JGuperAboutBox(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        JGuperApp.getApplication().show(aboutBox);
+    }
+    
+    @Action
+    public void newFuncionarios(){
+        if (aboutBox == null) {
+            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+            aboutBox = new JGuperAboutBox(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        JGuperApp.getApplication().show(aboutBox);
+    }
+    
+    @Action
+    public void newProducto(){
+        if (aboutBox == null) {
+            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+            aboutBox = new JGuperAboutBox(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        JGuperApp.getApplication().show(aboutBox);
+    }
+    
+    @Action
+    public void newProveedor(){
+        if (aboutBox == null) {
+            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+            aboutBox = new JGuperAboutBox(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        JGuperApp.getApplication().show(aboutBox);
+    }
+    
+    @Action
+    public void newRecurso(){
+        if (aboutBox == null) {
+            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+            aboutBox = new JGuperAboutBox(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        JGuperApp.getApplication().show(aboutBox);
+    }
+    
+    @Action
+    public void newServicio(){
+        if (aboutBox == null) {
+            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+            aboutBox = new JGuperAboutBox(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        JGuperApp.getApplication().show(aboutBox);
+    }
+    
+    @Action
+    public void newUsuario(){
+        if (aboutBox == null) {
+            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+            aboutBox = new JGuperAboutBox(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        JGuperApp.getApplication().show(aboutBox);
+    }
+    
+    @Action
+    public void newVenta(){
+        if (aboutBox == null) {
+            JFrame mainFrame = JGuperApp.getApplication().getMainFrame();
+            aboutBox = new JGuperAboutBox(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        JGuperApp.getApplication().show(aboutBox);
+    }
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -145,26 +257,32 @@ public class JGuperView extends FrameView {
         mNuevo.setText(resourceMap.getString("mNuevo.text")); // NOI18N
         mNuevo.setName("mNuevo"); // NOI18N
 
+        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(jguperapp.JGuperApp.class).getContext().getActionMap(JGuperView.class, this);
+        miNCliente.setAction(actionMap.get("newCliente")); // NOI18N
         miNCliente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_1, java.awt.event.InputEvent.CTRL_MASK));
         miNCliente.setText(resourceMap.getString("miNCliente.text")); // NOI18N
         miNCliente.setName("miNCliente"); // NOI18N
         mNuevo.add(miNCliente);
 
+        miNCompra.setAction(actionMap.get("newCompra")); // NOI18N
         miNCompra.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_2, java.awt.event.InputEvent.CTRL_MASK));
         miNCompra.setText(resourceMap.getString("miNCompra.text")); // NOI18N
         miNCompra.setName("miNCompra"); // NOI18N
         mNuevo.add(miNCompra);
 
+        miNEquipo.setAction(actionMap.get("newEquipo")); // NOI18N
         miNEquipo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_3, java.awt.event.InputEvent.CTRL_MASK));
         miNEquipo.setText(resourceMap.getString("miNEquipo.text")); // NOI18N
         miNEquipo.setName("miNEquipo"); // NOI18N
         mNuevo.add(miNEquipo);
 
+        miNFuncionarios.setAction(actionMap.get("newFuncionarios")); // NOI18N
         miNFuncionarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_4, java.awt.event.InputEvent.CTRL_MASK));
         miNFuncionarios.setText(resourceMap.getString("miNFuncionarios.text")); // NOI18N
         miNFuncionarios.setName("miNFuncionarios"); // NOI18N
         mNuevo.add(miNFuncionarios);
 
+        miNProduct.setAction(actionMap.get("newProducto")); // NOI18N
         miNProduct.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_5, java.awt.event.InputEvent.CTRL_MASK));
         miNProduct.setText(resourceMap.getString("miNProduct.text")); // NOI18N
         miNProduct.setName("miNProduct"); // NOI18N
@@ -197,7 +315,6 @@ public class JGuperView extends FrameView {
 
         mFile.add(mNuevo);
 
-        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(jguperapp.JGuperApp.class).getContext().getActionMap(JGuperView.class, this);
         miSalir.setAction(actionMap.get("quit")); // NOI18N
         miSalir.setText(resourceMap.getString("miSalir.text")); // NOI18N
         miSalir.setName("miSalir"); // NOI18N
@@ -284,4 +401,16 @@ public class JGuperView extends FrameView {
     private int busyIconIndex = 0;
 
     private JDialog aboutBox;
+    
+    private ClienteView clienteView;
+    private CompraView compraView;
+    private EquipoView equipoView;
+    private FuncionariosView funcionariosView;
+    private ProductoView productoView;
+    private ProveedorView proveedorView;
+    private RecursosView recursosView;
+    private ServicioView servicioView;
+    private UsuarioView usuarioView;
+    private VentaView ventaView;
+    
 }
