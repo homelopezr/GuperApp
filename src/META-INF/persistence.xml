@@ -11,6 +11,7 @@
     <class>jguperapp.tables.Equipo</class>
     <class>jguperapp.tables.Recursos</class>
     <class>jguperapp.tables.Proveedor</class>
+    <class>jguperapp.tables.Compra</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/guper?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
