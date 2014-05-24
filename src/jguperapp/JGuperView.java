@@ -222,6 +222,16 @@ public class JGuperView extends FrameView {
     private void initComponents() {
 
         mainPanel = new javax.swing.JPanel();
+        btnCliente = new javax.swing.JButton();
+        btnCompra = new javax.swing.JButton();
+        btnEquipo = new javax.swing.JButton();
+        btnFuncionario = new javax.swing.JButton();
+        btnProducto = new javax.swing.JButton();
+        btnProveedor = new javax.swing.JButton();
+        btnRecursos = new javax.swing.JButton();
+        btnServicio = new javax.swing.JButton();
+        btnUsuario = new javax.swing.JButton();
+        btnVenta = new javax.swing.JButton();
         menuBar = new javax.swing.JMenuBar();
         javax.swing.JMenu mFile = new javax.swing.JMenu();
         mNuevo = new javax.swing.JMenu();
@@ -245,28 +255,107 @@ public class JGuperView extends FrameView {
         progressBar = new javax.swing.JProgressBar();
 
         mainPanel.setName("mainPanel"); // NOI18N
+        mainPanel.setPreferredSize(new java.awt.Dimension(600, 400));
+
+        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(jguperapp.JGuperApp.class).getContext().getActionMap(JGuperView.class, this);
+        btnCliente.setAction(actionMap.get("newCliente")); // NOI18N
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(jguperapp.JGuperApp.class).getContext().getResourceMap(JGuperView.class);
+        btnCliente.setText(resourceMap.getString("btnCliente.text")); // NOI18N
+        btnCliente.setName("btnCliente"); // NOI18N
+
+        btnCompra.setAction(actionMap.get("newCompra")); // NOI18N
+        btnCompra.setText(resourceMap.getString("btnCompra.text")); // NOI18N
+        btnCompra.setName("btnCompra"); // NOI18N
+
+        btnEquipo.setAction(actionMap.get("newEquipo")); // NOI18N
+        btnEquipo.setText(resourceMap.getString("btnEquipo.text")); // NOI18N
+        btnEquipo.setName("btnEquipo"); // NOI18N
+
+        btnFuncionario.setAction(actionMap.get("newFuncionarios")); // NOI18N
+        btnFuncionario.setText(resourceMap.getString("btnFuncionario.text")); // NOI18N
+        btnFuncionario.setName("btnFuncionario"); // NOI18N
+
+        btnProducto.setAction(actionMap.get("newProducto")); // NOI18N
+        btnProducto.setText(resourceMap.getString("btnProducto.text")); // NOI18N
+        btnProducto.setName("btnProducto"); // NOI18N
+
+        btnProveedor.setAction(actionMap.get("newProveedor")); // NOI18N
+        btnProveedor.setText(resourceMap.getString("btnProveedor.text")); // NOI18N
+        btnProveedor.setName("btnProveedor"); // NOI18N
+
+        btnRecursos.setAction(actionMap.get("newRecurso")); // NOI18N
+        btnRecursos.setText(resourceMap.getString("btnRecursos.text")); // NOI18N
+        btnRecursos.setName("btnRecursos"); // NOI18N
+
+        btnServicio.setAction(actionMap.get("newServicio")); // NOI18N
+        btnServicio.setText(resourceMap.getString("btnServicio.text")); // NOI18N
+        btnServicio.setName("btnServicio"); // NOI18N
+
+        btnUsuario.setAction(actionMap.get("newUsuario")); // NOI18N
+        btnUsuario.setText(resourceMap.getString("btnUsuario.text")); // NOI18N
+        btnUsuario.setName("btnUsuario"); // NOI18N
+
+        btnVenta.setAction(actionMap.get("newVenta")); // NOI18N
+        btnVenta.setText(resourceMap.getString("btnVenta.text")); // NOI18N
+        btnVenta.setName("btnVenta"); // NOI18N
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(mainPanelLayout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnFuncionario, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
+                    .addComponent(btnCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCompra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnEquipo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(139, 139, 139)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnProducto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnProveedor, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
+                    .addComponent(btnRecursos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnServicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnVenta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(161, 161, 161))
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 252, Short.MAX_VALUE)
+            .addGroup(mainPanelLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCliente)
+                    .addComponent(btnProducto))
+                .addGap(40, 40, 40)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCompra)
+                    .addComponent(btnProveedor))
+                .addGap(40, 40, 40)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEquipo)
+                    .addComponent(btnRecursos))
+                .addGap(40, 40, 40)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnFuncionario)
+                    .addComponent(btnServicio))
+                .addGap(40, 40, 40)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnUsuario)
+                    .addComponent(btnVenta))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
+
+        btnVenta.getAccessibleContext().setAccessibleName(resourceMap.getString("btnVenta.AccessibleContext.accessibleName")); // NOI18N
 
         menuBar.setName("menuBar"); // NOI18N
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(jguperapp.JGuperApp.class).getContext().getResourceMap(JGuperView.class);
         mFile.setText(resourceMap.getString("mFile.text")); // NOI18N
         mFile.setName("mFile"); // NOI18N
 
         mNuevo.setText(resourceMap.getString("mNuevo.text")); // NOI18N
         mNuevo.setName("mNuevo"); // NOI18N
 
-        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(jguperapp.JGuperApp.class).getContext().getActionMap(JGuperView.class, this);
         miNCliente.setAction(actionMap.get("newCliente")); // NOI18N
         miNCliente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_1, java.awt.event.InputEvent.CTRL_MASK));
         miNCliente.setText(resourceMap.getString("miNCliente.text")); // NOI18N
@@ -291,7 +380,6 @@ public class JGuperView extends FrameView {
         miNFuncionarios.setName("miNFuncionarios"); // NOI18N
         mNuevo.add(miNFuncionarios);
 
-        miNProduct.setAction(actionMap.get("newProducto")); // NOI18N
         miNProduct.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_5, java.awt.event.InputEvent.CTRL_MASK));
         miNProduct.setText(resourceMap.getString("miNProduct.text")); // NOI18N
         miNProduct.setName("miNProduct"); // NOI18N
@@ -356,21 +444,24 @@ public class JGuperView extends FrameView {
         statusPanel.setLayout(statusPanelLayout);
         statusPanelLayout.setHorizontalGroup(
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
             .addGroup(statusPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(statusMessageLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 226, Short.MAX_VALUE)
-                .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(statusAnimationLabel)
-                .addContainerGap())
+                .addGap(122, 122, 122)
+                .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 468, Short.MAX_VALUE)
+                    .addGroup(statusPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(statusAnimationLabel)
+                        .addContainerGap())))
         );
         statusPanelLayout.setVerticalGroup(
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(statusPanelLayout.createSequentialGroup()
                 .addComponent(statusPanelSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                 .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(statusMessageLabel)
                     .addComponent(statusAnimationLabel)
@@ -384,6 +475,16 @@ public class JGuperView extends FrameView {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCliente;
+    private javax.swing.JButton btnCompra;
+    private javax.swing.JButton btnEquipo;
+    private javax.swing.JButton btnFuncionario;
+    private javax.swing.JButton btnProducto;
+    private javax.swing.JButton btnProveedor;
+    private javax.swing.JButton btnRecursos;
+    private javax.swing.JButton btnServicio;
+    private javax.swing.JButton btnUsuario;
+    private javax.swing.JButton btnVenta;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
